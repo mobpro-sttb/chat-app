@@ -28,9 +28,9 @@ class DefaultContainer extends StatelessWidget {
                   Text(
                     this.title,
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 25,
                       color: hexColor('#E2E1E3'),
-                      fontFamily: 'Lato',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
