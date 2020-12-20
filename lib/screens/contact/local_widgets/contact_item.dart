@@ -10,7 +10,7 @@ class ContactItem extends StatelessWidget {
         highlightColor: Colors.transparent,
         onTap: () {},
         child: Container(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+          padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -19,8 +19,8 @@ class ContactItem extends StatelessWidget {
                   ClipRRect(
                     child: Image.network(
                       'https://images.unsplash.com/photo-1447194047554-cfe888edc98c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                      width: 50,
-                      height: 50,
+                      width: 45,
+                      height: 45,
                     ),
                     borderRadius: BorderRadius.circular(25),
                   ),
@@ -31,7 +31,7 @@ class ContactItem extends StatelessWidget {
                       style: TextStyle(
                           color: hexColor('#E2E1E3'),
                           fontSize: 17,
-                          fontWeight: FontWeight.bold,
+                          //fontWeight: FontWeight.bold,
                           fontFamily: 'Montserrat'
                       ),
                     ),
