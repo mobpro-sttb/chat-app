@@ -1,14 +1,22 @@
+import 'package:chatapp/screens/in_chat/in_chat.dart';
 import 'package:chatapp/utils/static_functions.dart';
 import 'package:flutter/material.dart';
 
 class ChatItem extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
+
+    void openChatScreen(int id) {
+      print('go to in chat screen');
+      Navigator.push(context, MaterialPageRoute(builder: (context) => InChatScreen(id: id)));
+    }
+
     return Material(
       color: Colors.transparent,
       child: InkWell(
         highlightColor: Colors.transparent,
-        onTap: () {},
+        onTap: () {openChatScreen(0);},
         child: Container(
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
           child: Row(
