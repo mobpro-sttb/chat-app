@@ -1,4 +1,5 @@
 import 'package:chatapp/layouts/default_container.dart';
+import 'package:chatapp/screens/chat/local_widgets/chat_item.dart';
 import 'package:chatapp/utils/static_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,25 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return DefaultContainer(
       title: 'Messages',
-      child: Text('Ini text...'),
+      child: Expanded(
+        flex: 1,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 0, bottom: 0),
+          child: ListView(
+            children: <Widget>[
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+              ChatItem(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
