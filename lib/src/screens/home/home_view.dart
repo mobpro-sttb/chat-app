@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
       builder: (context, snapshot) {
         return Scaffold(
           appBar: CustomAppBar(
-            title: Text(_homeController.loading ? 'Memuat...' : 'Percakapan'),
+            title: Text(_homeController.loading ? 'Memuat...' : 'Chat App'),
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.settings),
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget usersList(BuildContext context) {
     if (_homeController.chats.length == 0) {
       return Center(
-        child: Text('Tidak ada percakapan.'),
+        child: Text('Tidak ada percakapan'),
       );
     }
     bool theresChatsWithMessages = _homeController.chats.where((chat) {
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
         0;
     if (!theresChatsWithMessages) {
       return Center(
-        child: Text('Tidak ada percakapan.'),
+        child: Text('Tidak ada percakapan'),
       );
     }
     return ListView.builder(
