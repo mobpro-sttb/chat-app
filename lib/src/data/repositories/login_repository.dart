@@ -12,11 +12,13 @@ class LoginRepository {
   Future<dynamic> login(String username, String password) async {
     try {
       var body = jsonEncode({'username': username, 'password': password});
+      print(body);
       var response = await http.post(
         '${MyUrls.serverUrl}/auth',
         body: body,
       );
       final dynamic loginResponse = jsonDecode(response.body);
+      print(loginResponse);
 
       if (loginResponse['error'] != null) {
         return CustomError.fromJson(loginResponse);
@@ -26,6 +28,7 @@ class LoginRepository {
       await CustomSharedPreferences.setString('user', user.toString());
       return user;
     } catch (err) {
+      print(err);
       return CustomError(
         error: true,
         errorMessage: "Terjadi kesalahan, silahkan coba lagi",

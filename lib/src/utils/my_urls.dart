@@ -1,4 +1,4 @@
 class MyUrls {
   // static final String serverUrl = 'http://192.168.0.17:8081';
-  static final String serverUrl = 'http://localhost:8081';
+  static final String serverUrl = 'https://mobpro-chat-app.herokuapp.com';
 }
