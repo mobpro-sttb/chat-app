@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>455292217300-eme93djvdbl7msaq6j56rq4c4aesd5mj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.455292217300-eme93djvdbl7msaq6j56rq4c4aesd5mj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4afmGy5-zlEF6flgaJ1VSSeTUqi4XEGE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>455292217300</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterchatapp</string>
+	<key>PROJECT_ID</key>
+	<string>lecture-project-295512</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lecture-project-295512.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:455292217300:ios:3c5ae25123d7bbd4e41841</string>
+	<key>DATABASE_URL</key>
+	<string>https://lecture-project-295512.firebaseio.com</string>
+</dict>
+</plist>
